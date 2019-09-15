@@ -4,30 +4,33 @@
 
 使用 apt-get install 安装的 go 默认版本较低，安装较新版本的[步骤](https://github.com/golang/go/wiki/Ubuntu)如下
 
-- 获取最新软件包源，并添加至当前的 apt 库
-`$ sudo apt-get-repository ppa:longsleep/golang-backports`
+- 获取最新软件包源，并添加至当前的 apt 库  
+`$ sudo apt-get-repository ppa:longsleep/golang-backports`  
 
-- 更新 apt 库
-`$ sudo apt-get update `
+- 更新 apt 库  
+`$ sudo apt-get update `  
 
-- 安装 go
-`$ sudo apt-get install golang-go`
+- 安装 go  
+`$ sudo apt-get install golang-go`  
 
-- 测试安装是否成功
-`$ go version`
+- 测试安装是否成功  
+`$ go version`  
 ![go version](assets/goV.PNG)
 
 
 ### 2.设置环境变量
 
 - #### 创建工作空间
-    go work是工作空间名，可自定义  
+    go work是工作空间名，可自定义    
     `$ mkdir $HOMW/gowork`
 
 - #### 配置环境变量  
     `$ vim ~/.bashrc`  
+
     `$ export GOPATH = $HOME/gowork`  
+
     `$ export PATH = $PATH:GOPATH/bin`  
+
 - #### 检查配置
     `$ go env`  
     ![go env](assets/env.PNG)
@@ -53,29 +56,29 @@
 
 - #### 在终端运行
 
-- ##### 第一种方法
-    ```
-    $ cd $GOPATH/src/github.com/guojj33/hello
-    $ go run hello.go  
-    ```
-    ![run](assets/run.PNG)
+##### 1. 第一种方法
+```
+$ cd $GOPATH/src/github.com/guojj33/hello
+$ go run hello.go  
+```
+![run](assets/run.PNG)
 
-- ##### 第二种方法
-    * 安装
-    ```
-    $ cd $GOPATH/src/github.com/guojj33/hello
-    $ go install
-    ```
-    `$GOPATH/bin` 中将产生 hello 可执行文件
+##### 2. 第二种方法
+* 安装
+```
+$ cd $GOPATH/src/github.com/guojj33/hello
+$ go install
+```
+`$GOPATH/bin` 中将产生 hello 可执行文件
 
-    * 运行
-    ```
-    $ cd $GOPATH/bin
-    $ hello
-    ```
+* 运行
+```
+$ cd $GOPATH/bin
+$ hello
+```
 
-    * 若将 $GOPATH/bin 添加到了 PATH，可以不用 cd 到 bin 而直接运行 hello
-    ![install](assets/install.PNG)
+* 若将 $GOPATH/bin 添加到了 PATH，可以不用 cd 到 bin 而直接运行 hello
+![install](assets/install.PNG)
 
 ### 4.创建库
 
@@ -102,11 +105,11 @@
 - #### 编译
     执行
     ```
-    $ go build github.com/user/stringutil
+    $ go build github.com/guojj33/stringutil
     ```
     将不会产生输出文件，要得到输出，执行
     ```
-    go install github.com/user/stringutil
+    go install github.com/guojj33/stringutil
     ```
     会将包的对象放到工作空间 pkg 目录中
 
@@ -117,7 +120,7 @@
     import (
         "fmt"
 
-        "github.com/user/stringutil"
+        "github.com/guojj33/stringutil"
     )
 
     func main() {
@@ -127,7 +130,7 @@
 
 - #### 运行 hello.go
     ```
-    $ go install github.com/user/hello
+    $ go install github.com/guojj33/hello
     $ hello
     ```
     ![hello](assets/hello2.PNG)
@@ -139,7 +142,7 @@ Go拥有一个轻量级的测试框架，由 go test 命令和 testing 包构成
 
 - #### 创建测试文件
     ```
-    $GOPATH/src/github.com/user/stringutil/reverse_test.go
+    $GOPATH/src/github.com/guojj33/stringutil/reverse_test.go
     ```
 
     reverse_test.go  
@@ -167,6 +170,6 @@ Go拥有一个轻量级的测试框架，由 go test 命令和 testing 包构成
 
 - #### 运行测试
     ```
-    $ go test github.com/user/stringutil
+    $ go test github.com/guojj33/stringutil
     ```
     ![test](assets/test.PNG)
