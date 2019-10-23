@@ -31,7 +31,7 @@
 
 #### 1. 使用 cobra 初始化 agenda 程序
 
-- cobra 安装
+- cobra 安装  
     创建并 cd 到目录 ``$GOPATH/src/golang.org/x``  
     在此目录下执行：
     ```
@@ -45,10 +45,10 @@
     ```
     完成安装
 
-- cobra 使用
+- cobra 使用  
     在想要创建 agenda 的目录下执行
     ```
-    cobra init agneda --pkg-name .
+    cobra init agenda --pkg-name .
     ```
     其中 ``--pkg-name``设置为``.``  
     会使生成的``main.go`` 中import 路径变成`.`  
@@ -66,7 +66,7 @@
 
 #### 2. 指令实现
 两条指令的实现逻辑很简单，主要是熟悉添加命令的方法
-- 创建账户
+- 创建账户  
     前提是用户名不重复，用户信息值非空
     ```go
     //storage.go
@@ -90,7 +90,7 @@
     } 
     ```
 
-- 删除账户
+- 删除账户  
     前提是账户存在，并且输入的密码正确
     ```go
     //storage.go
@@ -109,14 +109,14 @@
 
 #### 3. 程序测试
 
-- 编译运行
+- 编译运行  
     ![](assets/1.PNG)
-- 帮助信息
+- 帮助信息  
     ![](assets/2.PNG)
     ![](assets/3.PNG)
-- 注册用户
+- 注册用户  
     ![](assets/4.PNG)
-- 删除用户
+- 删除用户  
     ![](assets/5.PNG)
-- 出错时的帮助信息
+- 出错时的帮助信息  
     ![](assets/6.PNG)
