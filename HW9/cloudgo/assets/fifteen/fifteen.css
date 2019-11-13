@@ -1,0 +1,222 @@
+body{
+	text-align: center;
+	margin: 0;
+	background-color: #7E7A85;
+	font-family: Century Gothic, Futura, Verdana, sans-serif;
+}
+
+.preview{
+	transform: scale(1.3);
+	position: absolute;
+	left: -150px;
+	top: 15px;
+	width: 100px;
+	height: 100px;
+	box-shadow: 3px 3px 3px #545466;
+}
+
+.changeImg{
+	position: absolute;
+	left: -180px;
+	top: 120px;
+	box-shadow: 3px 3px 3px #545466;
+}
+
+.changeImg:active{
+	transform: translateX(3px) translateY(3px);
+	box-shadow: 0 0 0;
+}
+
+h1{
+	letter-spacing: 4px;
+	font-weight: 600;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0;
+	width: 400px;
+	height: 400px;
+}
+
+.n_container{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+}
+
+.play-zone{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #545466;
+	position: absolute;
+	width: 400px;
+	height: 402px;
+	box-shadow: 3px 3px 3px #545466;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+
+.panda{
+	background-size: 400px 400px;
+	background-image: url('images/girl.gif');
+	width: 100px;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+
+#p1{
+	background-position: 400px 400px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#p2{
+	background-position: 300px 400px;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+#p3{
+	background-position: 200px 400px;
+	position: absolute;
+	right: 100px;
+	top: 0;
+}
+
+#p4{
+	background-position: 100px 400px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#p5{
+	background-position: 400px 300px;
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+
+#p6{
+	background-position: 300px 300px;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+
+#p7{
+	background-position: 200px 300px;
+	position: absolute;
+	right: 100px;
+	top: 100px;
+}
+
+#p8{
+	background-position: 100px 300px;
+	position: absolute;
+	right: 0;
+	top: 100px;
+}
+
+#p9{
+	background-position: 400px 200px;
+	position: absolute;
+	left: 0;
+	top: 200px;
+}
+
+#p10{
+	background-position: 300px 200px;
+	position: absolute;
+	left: 100px;
+	top: 200px;
+}
+#p11{
+	background-position: 200px 200px;
+	position: absolute;
+	right: 100px;
+	top: 200px;
+}
+
+#p12{
+	background-position: 100px 200px;
+	position: absolute;
+	right: 0;
+	top: 200px;
+}
+
+#p13{
+	background-position: 400px 100px;
+	position: absolute;
+	left: 0;
+	top: 300px;
+}
+
+#p14{
+	background-position: 300px 100px;
+	position: absolute;
+	left: 100px;
+	top: 300px;
+}
+
+#p15{
+	background-position: 200px 100px;
+	position: absolute;
+	right: 100px;
+	top: 300px;
+}
+
+#p16{
+	background-position: 100px 100px;
+	border-style: none;
+	position: absolute;
+	right: 0px;
+	top: 300px;
+	width: 100px;
+	height: 100px;
+	background: none;
+}
+
+button{
+	margin: 20px;
+	letter-spacing: 2px;
+	background-color: #DDDDDD;/*#3385fe*/
+	color: black;
+	border-style: none;
+	font-size: 15px;
+    padding: 10px 28px;
+	box-shadow: 3px 3px 3px #545466;
+	outline: none;
+	border-radius: 2px;
+}
+
+.restart:active{
+	transform: translateX(2px) translateY(2px);
+	box-shadow: 0 0 0;
+}
+
+.info{
+	font-size: 25px;
+	visibility: hidden;
+}
+
+.info-container{
+	margin: 0 auto;
+}

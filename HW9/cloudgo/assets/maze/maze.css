@@ -1,0 +1,144 @@
+body{
+	text-align: center;
+}
+
+#box-container{
+	position: relative;
+	margin: 0 auto;
+	width: 380px;
+	height: 230px;
+	padding: 0;
+}
+
+#box{
+	position: absolute;
+	width: 380px;
+	height: 230px;
+	margin: 0;
+	padding: 0;
+}
+
+.top{
+	position: absolute;
+}
+
+#leftTop{
+	border-style: solid;
+	border-width: 1px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 120px;
+	height: 155px;
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#rightTop{
+	border-style: solid;
+	border-width: 1px;
+	position: absolute;
+	left: 260px;
+	top: 0px;
+	width: 120px;
+	height: 155px;
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#midTop{
+	border-style: solid;
+	border-width: 1px;
+	border-left-style: none;
+	border-right-style: none;
+	position: absolute;
+	left: 121px;
+	top: 0px;
+	width: 140.5px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+
+#button{
+	border-style: solid;
+	border-width: 1px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	width: 380px;
+	height: 40px;
+	background-color: #EEEEEE;
+}
+
+#buttonMid{
+	border-style: solid;
+	border-width: 1px;
+	border-bottom-style: none;
+	position: absolute;
+	left: 160px;
+	bottom: 41px;
+	margin: 0;
+	padding: 0;
+	width: 60px;
+	height: 110px;
+	background-color: #EEEEEE;
+}
+
+#help-container{
+	margin: 0 auto;
+	font-size: 13px;
+	width: 420px;
+	text-align: left;
+}
+
+#wall{
+	border-style: solid;
+	border-width: 1px;
+	margin: 0 auto;
+	padding: 0;
+	width: 60px;
+	height: 20px;
+	background-color: #EEEEEE;
+}
+
+#blockS{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 155px;
+	left: 0px;
+	margin-top: 4px;
+	padding: 0;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	background-color: lightgreen;
+	box-shadow: 0 0 0px green;
+}
+
+#blockE{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 155px;
+	right: -2px;
+	margin-top: 4px;
+	padding: 0;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #8585FD;
+	box-shadow: 0 0 0px #8585FD;
+}
+
+
+#warn{
+	visibility: hidden;
+}
+
